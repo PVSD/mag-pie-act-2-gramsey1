@@ -49,6 +49,22 @@ public class Magpie2
 		{
 			response= "He sounds like a good teacher.";
 		}
+		else if (statement.indexOf("math")>= 0
+				|| statement.indexOf("science") >=0
+				|| statement.indexOf("english") >=0
+				|| statement.indexOf("social studies") >=0)
+		{
+			response= "Oh, I love that subject!";
+		}
+		else if (statement.indexOf("kitkat") >= 0
+				|| statement.indexOf("kitkats") >= 0)
+		{
+			response= "That is my favorite candy even though i cannot eat..";
+		}
+		else if (statement.indexOf("Eden") >=0)
+		{
+			response= "I know an Eden too and she is very annoying!";
+		}
 		else
 		{
 			response = getRandomResponse();
