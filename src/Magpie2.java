@@ -30,6 +30,7 @@ public class Magpie2
 	 */
 	public String getResponse(String statement) {
 		String response = "";
+		int trimLength = statement.trim().length();
 		if (statement.indexOf("no") >= 0) {
 			response = "Why so negative?";
 		} else if (statement.indexOf("mother") >= 0
@@ -65,6 +66,8 @@ public class Magpie2
 		{
 			response= "I know an Eden too and she is very annoying!";
 		}
+		else if (trimLength == 0) {   //Compare the length of the trimmed string
+			response = "Say something, please."; }
 		else
 		{
 			response = getRandomResponse();
